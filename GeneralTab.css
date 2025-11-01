@@ -1,0 +1,104 @@
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.settings-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tab-header {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab-header span {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.active-tab {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+.section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9fbff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .section {
+  background-color: #2c2c2c;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mode-options label,
+.section label {
+  display: block;
+  margin: 8px 0;
+  font-weight: 500;
+  color: inherit;
+}
+
+.description {
+  font-size: 0.9em;
+  color: gray;
+  margin-left: 20px;
+}
+
+body.dark-mode .description {
+  color: #ccc;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode select {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #007bff;
+}
+
+.default-location-input {
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+body.dark-mode a {
+  color: #66aaff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

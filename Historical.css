@@ -1,0 +1,119 @@
+:root {
+  --background-dark: #161b22;
+  --background-panel: #23283b;
+  --navbar-bg: #222b36;
+  --navbar-active: #0991e6;
+  --navbar-inactive: #b1bac4;
+  --font-main: #e6eaf1;
+  --accent-temp: #e2434b;
+  --accent-humidity: #32c495;
+  --accent-wind: #ffae42;
+  --accent-precip: #40a8f5;
+  --border-light: #292f3a;
+  --shadow: rgba(0, 0, 0, 0.6);
+}
+
+.weather-dashboard {
+  background: var(--background-dark);
+  color: var(--font-main);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.weather-dashboard nav {
+  background: var(--navbar-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.weather-dashboard nav button {
+  background: none;
+  color: var(--navbar-inactive);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, transform 0.15s;
+  border-radius: 8px;
+}
+
+.weather-dashboard nav button:hover:not(.active) {
+  color: #fff;
+  background: rgba(9, 145, 230, 0.2);
+  transform: scale(1.05);
+}
+
+.weather-dashboard nav button.active {
+  color: #fff;
+  background: var(--navbar-active);
+  box-shadow: 0 0 8px var(--navbar-active);
+}
+
+.weather-dashboard .chart-panel {
+  background: var(--background-panel);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 24px var(--shadow);
+  margin-top: 2rem;
+  max-height: 400px;
+}
+
+.weather-dashboard h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--font-main);
+}
+
+.line-temp {
+  color: var(--accent-temp);
+}
+
+.line-humidity {
+  color: var(--accent-humidity);
+}
+
+.line-wind {
+  color: var(--accent-wind);
+}
+
+.line-precip {
+  color: var(--accent-precip);
+}
+nav {
+  background: var(--navbar-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+  
+  padding: 0.5rem 1rem; 
+  margin: 0; 
+
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start; 
+}
+
+nav button {
+  background: none;
+  color: var(--navbar-inactive);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+nav button.active {
+  color: #fff;
+  background: var(--navbar-active);
+  border-radius: 8px;
+} 

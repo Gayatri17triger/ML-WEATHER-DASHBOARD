@@ -1,0 +1,58 @@
+.fav-container {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.fav-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.fav-launch-box {
+  background: #0078d4;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+
+.fav-box {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.fav-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fav-add-box {
+  background: #e1ecf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fav-plus {
+  font-size: 2rem;
+  color: #0078d4;
+  font-weight: bold;
+}

@@ -1,0 +1,171 @@
+.hourly-grid-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #eef4fb, #ffffff);
+}
+
+.days-row {
+  display: flex;
+  align-items: center;
+  background: #dce8ff;
+  border-bottom: 2px solid #b0c7ff;
+}
+
+.corner-cell {
+  width: 120px;
+  height: 50px;
+  background: #f0f5ff;
+}
+
+.day-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: #334155;
+  transition: 0.3s;
+}
+
+.day-btn:hover {
+  background: #bcd2ff;
+  color: #0f172a;
+}
+
+.day-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.main-grid {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.hours-column {
+  display: flex;
+  flex-direction: column;
+  background: #f1f5ff;
+  border-right: 2px solid #cbd5e1;
+  width: 120px;
+  overflow-y: auto;
+}
+
+.hour-btn {
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  color: #475569;
+  transition: 0.3s;
+}
+
+.hour-btn:hover {
+  background: #bcd2ff;
+  color: #1e3a8a;
+}
+
+.hour-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9fbff;
+}
+
+.weather-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.weather-box {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.weather-box:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.weather-box h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #13c619;
+}
+
+.weather-box p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d4ed8;
+  margin: 5px 0 0;
+}
+
+.previous-section {
+  margin-top: 25px;
+  background: #edf2ff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+}
+
+.previous-section h3 {
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.previous-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.previous-box {
+  background: white;
+  border: 1px solid #c7d2fe;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.1);
+}
+
+.previous-box h4 {
+  margin: 0 0 5px;
+  font-size: 13px;
+  color: #1cc816;
+}
+
+.previous-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #2563eb;
+}
+
+.graph-section {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+.graph-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+  text-align: center;
+}

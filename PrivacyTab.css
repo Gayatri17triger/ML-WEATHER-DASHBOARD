@@ -1,0 +1,34 @@
+.settings-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+  font-size: 16px;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #0078d4; 
+  font-weight: bold;
+  color: #0078d4;
+}
+
+.content {
+  padding: 15px;
+}
+
+.privacy-content ul {
+  margin-top: 10px;
+  line-height: 1.6;
+}

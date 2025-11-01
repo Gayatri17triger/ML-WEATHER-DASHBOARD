@@ -1,0 +1,33 @@
+.settings-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.subnavbar {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.subnavbar button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  color: #444;
+}
+
+.subnavbar button:hover {
+  background-color: #f2f2f2;
+}
+
+.subnavbar button.active {
+  border-bottom: 3px solid #19d400;
+  color: #0078d4;
+}
+
+.settings-content {
+  padding: 10px;
+}
